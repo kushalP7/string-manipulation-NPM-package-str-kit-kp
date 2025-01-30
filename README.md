@@ -2,60 +2,72 @@
 
 `str-kit-kp` is a simple and easy-to-use package providing utility functions for string manipulation. It includes functions for capitalizing letters, converting strings to camelCase, kebab-case, and more.
 
-## Features
-
-- **Capitalize the first letter of a string**
-- **Convert a string to camelCase**
-- **Trim leading/trailing whitespace**
-- **Replace spaces with underscores**
-- **Convert a string to kebab-case**
-
 ## Installation
 
-You can install `str-kit-kp` via npm:
+This is a [Node.js](https://nodejs.org/en/) module available through the
+[npm registry](https://www.npmjs.com/).
 
-```bash
-npm install str-kit-kp
+Before installing, [download and install Node.js](https://nodejs.org/en/download/).
+Node.js 0.10 or higher is required.
 
-## Usage
+If this is a brand new project, make sure to create a `package.json` first with
+the [`npm init` command](https://docs.npmjs.com/creating-a-package-json-file).
 
-To use `str-kit-kp` in your project, follow the examples below.
+Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
-## Example: Usage in JavaScipt
+```console
+$ npm install str-kit-kp
+```
 
-```javascript
-// Import the package
+Follow [our installing guide](http://expressjs.com/en/starter/installing.html)
+for more information.
+
+## Features
+
+  * Capitalize the first letter of a string
+  * Convert a string to camelCase
+  * Trim leading/trailing whitespace
+  * Replace spaces with underscores
+  * Convert a string to kebab-case
+
+## Docs & Community
+
+  * [GitHub Organization](https://github.com/kushalP7/string-manipulation-NPM-package-str-kit-kp.git) for Official Middleware & Modules
+
+## Quick Start
+
+  To get started with str-kit-kp, follow these steps:
+
+  Install the executable. The executable's major version will match Express's:
+
+```console
+$ npm install str-kit-kp
+```
+
+```js
+//In JavaScript
 const strKit = require('str-kit-kp');
-
-// Capitalize the first letter of a string
 const result = strKit.capitalizeFirstLetter('hello world');
 console.log(result); // Output: 'Hello world'
+```
 
-## Example: Usage in TypeScript
-
-If you're using TypeScript, you can easily import and use the package like so:
-```typescript
-// Import the package
+```ts
+//In TypeScipt
 import * as strKit from 'str-kit-kp';
 
-// Example: Capitalize the first letter of a string
 const result: string = strKit.capitalizeFirstLetter('hello world');
 console.log(result); // Output: 'Hello world'
 
-// Example: Convert a string to camelCase
 const camelCaseResult: string = strKit.toCamelCase('hello world');
 console.log(camelCaseResult); // Output: 'helloWorld'
 
-// Example: Trim leading/trailing whitespace
 const trimmedResult: string = strKit.trimWhitespace('  some text  ');
 console.log(trimmedResult); // Output: 'some text'
 
-// Example: Replace spaces with underscores
 const underscoredResult: string = strKit.replaceSpacesWithUnderscores('hello world');
 console.log(underscoredResult); // Output: 'hello_world'
 
-// Example: Convert a string to kebab-case
 const kebabCaseResult: string = strKit.toKebabCase('Hello World');
 console.log(kebabCaseResult); // Output: 'hello-world'
-
-
+```
