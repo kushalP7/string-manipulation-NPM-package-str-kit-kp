@@ -27,4 +27,11 @@ function toKebabCase(str: string): string {
         .replace(/\s+/g, '-');
 }
 
-export { capitalizeFirstLetter, toCamelCase, trimWhitespace, replaceSpacesWithUnderscore, toKebabCase };
+function capitalizeEveryLetter(str: string): string {
+    return str.toUpperCase();
+}
+
+
+
+
+export { capitalizeFirstLetter, toCamelCase, trimWhitespace, replaceSpacesWithUnderscore, toKebabCase,capitalizeEveryLetter };
