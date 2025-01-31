@@ -31,4 +31,39 @@ function capitalizeEveryLetter(str: string): string {
     return str.toUpperCase();
 }
 
-export { capitalizeFirstLetter, toCamelCase, trimWhitespace, replaceSpacesWithUnderscore, toKebabCase,capitalizeEveryLetter };
+function reverseString(str: string): string {
+    return str.split('').reverse().join('');
+}
+
+function isPalindrome(str: string): boolean {
+    const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return cleanedStr === cleanedStr.split('').reverse().join('');
+}
+
+function countWords(str: string): number {
+    return str.trim().split(/\s+/).length;
+}
+
+function removeSpecialCharacters(str: string): string {
+    return str.replace(/[^a-zA-Z0-9 ]/g, '');
+}
+
+function truncateString(str: string, length: number): string {
+    return str.length > length ? str.substring(0, length) + '...' : str;
+}
+
+
+export {
+    capitalizeFirstLetter,
+    toCamelCase,
+    trimWhitespace,
+    replaceSpacesWithUnderscore,
+    toKebabCase,
+    capitalizeEveryLetter,
+    reverseString,
+    isPalindrome,
+    countWords,
+    removeSpecialCharacters,
+    truncateString
+};
+
