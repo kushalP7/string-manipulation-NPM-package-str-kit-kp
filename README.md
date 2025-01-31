@@ -70,4 +70,7 @@ console.log(underscoredResult); // Output: 'hello_world'
 
 const kebabCaseResult: string = strKit.toKebabCase('Hello World');
 console.log(kebabCaseResult); // Output: 'hello-world'
+
+const capitalizeEveryLetterResult: string = strKit.capitalizeEveryLetter('hello world');
+console.log(capitalizeEveryLetterResult); // Output: 'HELLO WORLD'
 ```
