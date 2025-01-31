@@ -31,7 +31,4 @@ function capitalizeEveryLetter(str: string): string {
     return str.toUpperCase();
 }
 
-
-
-
 export { capitalizeFirstLetter, toCamelCase, trimWhitespace, replaceSpacesWithUnderscore, toKebabCase,capitalizeEveryLetter };
